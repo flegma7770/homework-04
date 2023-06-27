@@ -17,6 +17,7 @@ body {
     --indent: 30px;
 }
 
+
 /* Reset */
 h1,
 h2,
@@ -149,6 +150,7 @@ img {
     letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
+    
 }
 
 .contacts-item:hover,
@@ -160,8 +162,15 @@ img {
     background-color: var(--color-blue);
     padding-top: 188px;
     padding-bottom: 188px;
-    min-width: 169px
-    
+    min-width: 169px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/bgmain/BGmain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .hero-title {
     color: var(--bg-white);
