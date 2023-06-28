@@ -15,6 +15,7 @@ body {
     --hov-foc-cl: #404BBF;
     --items: 3;
     --indent: 30px;
+    --lightslate: #8E8F99;
 }
 
 
@@ -221,6 +222,16 @@ img {
 .list-title-text {
     width: 264px;
 }
+.main-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    margin-bottom: 8px;
+}
 .main-title {
     color: var(--color-blue);
     font-weight: 500;
@@ -308,7 +319,54 @@ img {
     text-align: center;
 }
 
-/* footer section */
+/**
+  |============================
+  | clients section
+  |============================
+*/
+.section-clients {
+}
+.clients-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-top: 120px;
+    margin-bottom: 72px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px; 
+}
+.clients-item {
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate, #8E8F99);
+}
+.clients-link {
+    width: 168px;
+    height: 88px;
+}
+
+.clients-link:hover {
+    border-color: var(--hov-foc-cl);
+}
+.clients-link:hover .clients-icon {
+    fill: var(--hov-foc-cl);
+}
+
+/**
+  |============================
+  | footer section
+  |============================
+*/
 
 .footer {
     background-color: var(--color-blue);
