@@ -319,6 +319,25 @@ img {
     text-align: center;
 }
 
+.container-team-styles {
+}
+.team-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    margin-top: 8px;
+}
+
 /**
   |============================
   | clients section
@@ -367,12 +386,15 @@ img {
   | footer section
   |============================
 */
-
+.container-footer {
+    display: flex;
+}
 .footer {
     background-color: var(--color-blue);
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .footer-logo-studio {
     color: var(--color-white);
     font-family: 'Raleway', sans-serif;
@@ -392,6 +414,22 @@ img {
     display: inline-block;
     margin-bottom: 16px;
     margin-right: 0;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 80px;
+    flex-shrink: 0;
+
+}
+.social-text {
+    color: var(--bg-white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 
 /* Page 2 */
