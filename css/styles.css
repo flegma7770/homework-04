@@ -136,8 +136,22 @@ img {
     display: flex;
     gap: 40px;
 }
+
 .nav-item .link {
     text-decoration: none;
+}
+.nav-item {
+    position: relative;
+}
+.nav-item.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--hov-foc-cl);
+    height: 4px;
+    position: absolute;
+    bottom: 0;
 }
 .contacts-list {
     display: flex;
@@ -380,6 +394,9 @@ img {
     align-items: center;
     border: 1px solid var(--lightslate, #8E8F99);
     border-radius: 4px;
+}
+.clients-icon {
+    fill: #8E8F99;
 }
 .clients-link:hover,
 .clients-link:focus {
