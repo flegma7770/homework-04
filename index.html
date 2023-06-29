@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
+    <!-- Header section -->
   <body>
     <header class="header">
       <div class="header-container container">
@@ -52,15 +52,15 @@
         </address>
       </div>
     </header>
-
+      <!-- Section hero -->
     <main>
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn button">Order Service</button>
+          <button type="button" data-modal-open class="hero-btn button">Order Service</button>
         </div>
       </section>
-
+        <!-- Section main -->
       <section class="section-main">
         <div class="container">
           <h2 class="visually-hidden main-page">main page</h2>
@@ -125,7 +125,7 @@
           </ul>
         </div>
       </section>
-
+        <!-- Section-middle -->
       <section class="section-middle">
         <div class="container">
           <h2 class="middle-title">What are we doing</h2>
@@ -154,7 +154,7 @@
           </ul>
         </div>
       </section>
-
+        <!-- Section-team -->
       <section class="section-team">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
@@ -295,6 +295,7 @@
           </ul>
         </div>
       </section>
+        <!-- Section-clients -->
       <section class="section-clients">
         <div class="container">
           <h2 class="clients-title">Customers</h2>
@@ -345,7 +346,7 @@
         </div>
       </section>
     </main>
-
+      <!-- Footer -->
     <footer class="footer">
       <div class="container-footer container">
         <div>
@@ -395,5 +396,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/sprite.svg#close-X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
