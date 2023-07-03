@@ -371,10 +371,6 @@ img {
 }
 
 .container-team-styles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 32px 0;
 }
 .team-icon {
@@ -406,7 +402,7 @@ img {
     background-color: var(--hov-foc-cl);
 }
 .team-link.foot{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .team-link.foot:hover,
 .team-link.foot:focus {
@@ -461,7 +457,7 @@ img {
 .clients-icon {
     fill: currentColor;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -696,9 +692,13 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn:focus {
     background-color: var(--hov-foc-cl);
     border: none;
-    color: var(--bg-white);
+    fill: var(--bg-white);
+    
 }
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: currentColor;
+}
+.modal-btn:hover .close-icon
+.modal-btn:focus .close-icon {
+    fill: var(--bg-white);
 }
